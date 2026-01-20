@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Intake Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header class="app__header">
+            <div>
+                <p class="eyebrow">Healthy Habit</p>
+                <h1>Water Intake Tracker</h1>
+                <p class="lede">Set a daily goal, log your cups, and stay hydrated with gentle reminders.</p>
+            </div>
+        </header>
+
+        <section class="layout">
+            <section class="panel panel--main">
+                <div class="ring-card">
+                    <div class="ring" id="progressRing">
+                        <div class="ring__center">
+                            <p class="ring__value" id="progressPercent">0%</p>
+                            <p class="ring__label">of goal</p>
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <p class="stat__label">Consumed</p>
+                            <p class="stat__value" id="consumedCups">0 cups</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat__label">Remaining</p>
+                            <p class="stat__value" id="remainingCups">0 cups</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat__label">Goal</p>
+                            <p class="stat__value" id="goalDisplay">8 cups</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <div class="control-group">
+                        <label for="goalInput">Daily goal (cups)</label>
+                        <div class="input-row">
+                            <input id="goalInput" type="number" min="1" step="1" value="8">
+                            <button id="saveGoal" type="button" class="btn secondary">Update goal</button>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="cupSizeInput">Cup size (ml)</label>
+                        <div class="input-row">
+                            <input id="cupSizeInput" type="number" min="50" step="50" value="250">
+                            <span class="hint">Used for the hydration reminder text.</span>
+                        </div>
+                    </div>
+
+                    <div class="button-row">
+                        <button id="addCup" type="button" class="btn primary">+1 cup</button>
+                        <button id="removeCup" type="button" class="btn ghost">-1 cup</button>
+                        <button id="resetDay" type="button" class="btn text">Reset day</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel panel--tips">
+                <p class="eyebrow">Hydration reminder</p>
+                <h2 id="reminderTitle">You got this.</h2>
+                <p id="reminderBody" class="reminder">Start sipping early to spread your intake through the day.</p>
+                <ul class="tips">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatibus et.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga accusantium aliquam, delectus labore earum, minus temporibus.</li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
