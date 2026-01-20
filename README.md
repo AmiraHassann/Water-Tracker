@@ -28,3 +28,4 @@ A simple, responsive hydration tracker built with HTML, CSS, and vanilla JavaScr
 - HTML for structure
 - CSS (custom) for layout and styling
 - Vanilla JavaScript for state, calculations, and UI updates
+
