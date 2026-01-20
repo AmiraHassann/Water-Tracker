@@ -1,6 +1,6 @@
 # Water Intake Tracker
 
-A simple, responsive hydration tracker built with HTML, CSS, and vanilla JavaScript. Set your daily goal, log cups, and get a quick visual of your progress.
+A simple, responsive hydration tracker built with HTML, CSS, and vanilla JavaScript. Set your daily goal, log cups, and get a quick visual of your progress
 
 ## Features
 - Live progress ring that fills as you log cups
